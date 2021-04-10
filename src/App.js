@@ -7,6 +7,7 @@ function App() {
       <h1>
         Leonardo Tartarini
       </h1>
+      <h2>Teste</h2>
     </div>
   );
 }
