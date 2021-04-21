@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/leotartarini/static/css/main.9d5b29c0.chunk.css",
+    "main.css": "/leotartarini/static/css/main.5a04e3ad.chunk.css",
     "main.js": "/leotartarini/static/js/main.ed7bab80.chunk.js",
     "main.js.map": "/leotartarini/static/js/main.ed7bab80.chunk.js.map",
     "runtime-main.js": "/leotartarini/static/js/runtime-main.51d5c663.js",
@@ -10,14 +10,14 @@
     "static/js/3.d0d3676e.chunk.js": "/leotartarini/static/js/3.d0d3676e.chunk.js",
     "static/js/3.d0d3676e.chunk.js.map": "/leotartarini/static/js/3.d0d3676e.chunk.js.map",
     "index.html": "/leotartarini/index.html",
-    "static/css/main.9d5b29c0.chunk.css.map": "/leotartarini/static/css/main.9d5b29c0.chunk.css.map",
+    "static/css/main.5a04e3ad.chunk.css.map": "/leotartarini/static/css/main.5a04e3ad.chunk.css.map",
     "static/js/2.85169655.chunk.js.LICENSE.txt": "/leotartarini/static/js/2.85169655.chunk.js.LICENSE.txt",
     "static/media/logo.6ce24c58.svg": "/leotartarini/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.51d5c663.js",
     "static/js/2.85169655.chunk.js",
-    "static/css/main.9d5b29c0.chunk.css",
+    "static/css/main.5a04e3ad.chunk.css",
     "static/js/main.ed7bab80.chunk.js"
   ]
 }
