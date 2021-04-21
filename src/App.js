@@ -1,13 +1,14 @@
 import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Landing from './pages/Landing';
 
 function App() {
   return (
     <div className="App">
-      <h1>
-        Leonardo Tartarini
-      </h1>
-      <h2>Teste</h2>
+      <Router>
+          <Route path='/' component={Landing} />
+      </Router>
     </div>
   );
 }
