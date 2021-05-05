@@ -6,7 +6,9 @@ import BlogContent from '../components/BlogContent';
 const BlogTest = () => {
     const [markdown, setMarkdown] = useState('');
     const [blogTitle, setBlogTitle] = useState('');
+    const [blogSubtitle, setBlogSubtitle] = useState('');
     const [date, setDate] = useState('');
+    const [tag, setTag] = useState('');
 
     const [error, setErro] = useState(false);
 
@@ -33,8 +35,10 @@ const BlogTest = () => {
             })
             .then((text) => {
                 let obj = JSON.parse(text);
-                setBlogTitle(obj.título);
+                setBlogTitle(obj.titulo);
+                setBlogSubtitle(obj.subtitulo);
                 setDate(obj.data);
+                setTag(obj.assunto);
             })
             .catch((error) => setErro(true));
         
@@ -46,7 +50,7 @@ const BlogTest = () => {
         <div>
             {error === false ?
             (<>
-                <BlogContent title={blogTitle} tag='Teste'>
+                <BlogContent title={blogTitle} subtitulo={blogSubtitle} data={date} tag={tag}>
                     <div dangerouslySetInnerHTML={{__html: markdown}} />
                 </BlogContent>
             </>) : 

@@ -7,9 +7,9 @@ const BlogContent = (props) => {
         <Container>
             <Tag>{props.tag.toUpperCase()}</Tag>
             <Title>{props.title}</Title>
-            <Subtitle>É muito louco como as coisas podem ser assim.</Subtitle>
+            <Subtitle>{props.subtitulo}</Subtitle>
             <DataBlock>
-                <Date>13 de fevereiro</Date>
+                <Date>{props.data}</Date>
                 <span>social</span>
             </DataBlock>
             <hr style={{
@@ -43,6 +43,7 @@ const Title = styled.p`
     font-size: 45px;
     margin: 0;
     line-height: 1.5em;
+    color: black;
 `;
 const Subtitle = styled.p`
     font-family: 'Noto Sans JP', sans-serif;
