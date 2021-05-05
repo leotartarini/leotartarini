@@ -46,8 +46,7 @@ const BlogTest = () => {
         <div>
             {error === false ?
             (<>
-                <BlogContent title={blogTitle}>
-                    <h3>ID: {blogid}</h3>
+                <BlogContent title={blogTitle} tag='Teste'>
                     <div dangerouslySetInnerHTML={{__html: markdown}} />
                 </BlogContent>
             </>) : 
