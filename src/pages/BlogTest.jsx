@@ -1,17 +1,19 @@
 import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import marked from 'marked';
 import BlogContent from '../components/BlogContent';
-
-let Test = require("../posts/Teste.md");
-let Blog1 = ("https://raw.githubusercontent.com/leotartarini/datasets/main/README.md");
-let lorem = ('https://raw.githubusercontent.com/leotartarini/posts/main/lorem.md')
-
-let content = ('https://raw.githubusercontent.com/leotartarini/posts/main/lorem/content.md')
 
 const BlogTest = () => {
     const [markdown, setMarkdown] = useState('');
     const [blogTitle, setBlogTitle] = useState('');
     const [date, setDate] = useState('');
+
+    const [error, setErro] = useState(false);
+
+    let { blogid } = useParams();
+
+    let content = (`https://raw.githubusercontent.com/leotartarini/posts/main/${blogid}/content.md`)
+    let data = (`https://raw.githubusercontent.com/leotartarini/posts/main/${blogid}/data.json`)
     
     useEffect(() => {
         fetch(content)
@@ -22,9 +24,9 @@ const BlogTest = () => {
             .then((text) => {
                 setMarkdown(marked(text));
             })
-            .catch((error) => console.error(error));
+            .catch((error) => setErro(true));
 
-        fetch('https://raw.githubusercontent.com/leotartarini/posts/main/lorem/data.json')
+        fetch(data)
             .then((response) => {
                 if (response.ok) return response.text();
                 else return Promise.reject("Didn't fetch text correctly");
@@ -34,16 +36,26 @@ const BlogTest = () => {
                 setBlogTitle(obj.título);
                 setDate(obj.data);
             })
-            .catch((error) => console.error(error));
+            .catch((error) => setErro(true));
         
 
     });
 
     
     return(
-        <BlogContent title={blogTitle}>
-            <div dangerouslySetInnerHTML={{__html: markdown}} />
-        </BlogContent>
+        <div>
+            {error === false ?
+            (<>
+                <BlogContent title={blogTitle}>
+                    <h3>ID: {blogid}</h3>
+                    <div dangerouslySetInnerHTML={{__html: markdown}} />
+                </BlogContent>
+            </>) : 
+            (<>
+                <h1>Este blog não existe.</h1>
+            </>)}
+
+        </div>
     )
 };
 
