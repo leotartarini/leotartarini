@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, useParams } from "react-router-dom";
 // Pages
 import Landing from './pages/Landing';
 import BlogTest from './pages/BlogTest';
+import GlobalStyle from './GlobalStyle';
 
 function Child() {
   // We can use the `useParams` hook here to access
@@ -24,7 +25,8 @@ function App() {
       <Router>
           <Route path='/leotartarini' exact component={Landing} />
           {/* <Route path='/leotartarini/blog' exact component={BlogTest} /> */}
-          <Route path='/leotartarini/:blogid' exact component={BlogTest} />
+          <Route path='/leotartarini/blog/:blogid' exact component={BlogTest} />
+          <GlobalStyle/>
       </Router>
     </div>
   );

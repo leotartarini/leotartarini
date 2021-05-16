@@ -41,7 +41,7 @@ h1 {
   font-family: 'Lora', serif;
   font-weight: 500;
   font-size: 30px;
-  color: #333;
+  color: var(--title);
   margin: 40px 0 30px 0;
 }
 
@@ -52,7 +52,7 @@ p {
   font-size: 20px;
   font-weight: normal;
   line-height: 1.8em;
-  color: #333;
+  color: var(--title);
   margin-bottom: 20px;
 }
 
@@ -65,5 +65,5 @@ img {
 }
 
 a {
-  color: #0274b6;
+  color: var(--light-blue);
 }

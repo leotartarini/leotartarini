@@ -8,7 +8,7 @@ const Landing = () => {
                 <HeadingContainer>
                     <Heading>Leonardo Tartarini</Heading>
                     <LinksContainer>
-                        <Link color={'#22458f'} href='mailto:leonardo@sigma.cash'>Email</Link>
+                        <Link color={'var(--main)'} href='mailto:leonardo@sigma.cash'>Email</Link>
                         <Link color={'#2867B2'} href='https://linkedin.com/in/leotartarini' target='_blank' rel='noopener'>LinkedIn</Link>
                         <Link color={'#1DA1F2'} href='https://twitter.com/eutartarini' target='_blank' rel='noopener'>Twitter</Link>
                         <Link color={'#24292d'} href='https://github.com/leotartarini' target='_blank' rel='noopener'>Github</Link>
@@ -23,7 +23,7 @@ const Landing = () => {
 const Billboard = styled.div`
     height: 100vh;
     /* background-color: #FFF1E5; */
-    background-color: #F5F8FA;
+    background-color: var(--background);
     display: flex;
     align-items: center;
 `;
@@ -39,7 +39,7 @@ const Heading = styled.h1`
     margin: 0 0 15px 0;
     font-family: 'Lora', serif;
     /* color: #8F223A; */
-    color: #22458f;
+    color: var(--main);
     
     @media only screen and (max-width: 900px) {
     font-size: 55px;
@@ -65,7 +65,7 @@ const LinksContainer = styled.div`
 
 const Link = styled.a`
     text-decoration: underline ${p => p.color || '#26cb17'};
-    color: black;
+    color: var(--black);
     margin: 5px 20px 15px 0;
     
 `;
