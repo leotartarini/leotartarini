@@ -1,23 +1,27 @@
 {
   "files": {
-    "main.css": "/leotartarini/static/css/main.f44bf2f5.chunk.css",
-    "main.js": "/leotartarini/static/js/main.ed7bab80.chunk.js",
-    "main.js.map": "/leotartarini/static/js/main.ed7bab80.chunk.js.map",
-    "runtime-main.js": "/leotartarini/static/js/runtime-main.51d5c663.js",
-    "runtime-main.js.map": "/leotartarini/static/js/runtime-main.51d5c663.js.map",
-    "static/js/2.85169655.chunk.js": "/leotartarini/static/js/2.85169655.chunk.js",
-    "static/js/2.85169655.chunk.js.map": "/leotartarini/static/js/2.85169655.chunk.js.map",
-    "static/js/3.d0d3676e.chunk.js": "/leotartarini/static/js/3.d0d3676e.chunk.js",
-    "static/js/3.d0d3676e.chunk.js.map": "/leotartarini/static/js/3.d0d3676e.chunk.js.map",
+    "main.css": "/leotartarini/static/css/main.01df89a4.chunk.css",
+    "main.js": "/leotartarini/static/js/main.71de61b5.chunk.js",
+    "main.js.map": "/leotartarini/static/js/main.71de61b5.chunk.js.map",
+    "runtime-main.js": "/leotartarini/static/js/runtime-main.129e4d9a.js",
+    "runtime-main.js.map": "/leotartarini/static/js/runtime-main.129e4d9a.js.map",
+    "static/js/2.f297b146.chunk.js": "/leotartarini/static/js/2.f297b146.chunk.js",
+    "static/js/2.f297b146.chunk.js.map": "/leotartarini/static/js/2.f297b146.chunk.js.map",
+    "static/js/3.ee700a26.chunk.js": "/leotartarini/static/js/3.ee700a26.chunk.js",
+    "static/js/3.ee700a26.chunk.js.map": "/leotartarini/static/js/3.ee700a26.chunk.js.map",
     "index.html": "/leotartarini/index.html",
-    "static/css/main.f44bf2f5.chunk.css.map": "/leotartarini/static/css/main.f44bf2f5.chunk.css.map",
-    "static/js/2.85169655.chunk.js.LICENSE.txt": "/leotartarini/static/js/2.85169655.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/leotartarini/static/media/logo.6ce24c58.svg"
+    "static/css/main.01df89a4.chunk.css.map": "/leotartarini/static/css/main.01df89a4.chunk.css.map",
+    "static/js/2.f297b146.chunk.js.LICENSE.txt": "/leotartarini/static/js/2.f297b146.chunk.js.LICENSE.txt",
+    "static/media/facebook.07adab79.svg": "/leotartarini/static/media/facebook.07adab79.svg",
+    "static/media/linkedin.1fc60108.svg": "/leotartarini/static/media/linkedin.1fc60108.svg",
+    "static/media/logo.6ce24c58.svg": "/leotartarini/static/media/logo.6ce24c58.svg",
+    "static/media/twitter.ba30e169.svg": "/leotartarini/static/media/twitter.ba30e169.svg",
+    "static/media/wpp.a30d2c46.svg": "/leotartarini/static/media/wpp.a30d2c46.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.51d5c663.js",
-    "static/js/2.85169655.chunk.js",
-    "static/css/main.f44bf2f5.chunk.css",
-    "static/js/main.ed7bab80.chunk.js"
+    "static/js/runtime-main.129e4d9a.js",
+    "static/js/2.f297b146.chunk.js",
+    "static/css/main.01df89a4.chunk.css",
+    "static/js/main.71de61b5.chunk.js"
   ]
 }
